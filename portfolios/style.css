@@ -155,25 +155,65 @@ body {
 }
 
 
+/*******************************************  education section ***************************************************/
+
+#education {
+    background-color: #EEEEEE;
+    padding: 60px 0;
+}
+#education .card{
+    background-color: #DDDDDD;
+    border: 2px solid #b65398;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 170px;
+    transition: all .4s ease-in;
+}
+#education .card:hover{
+    background-color: #ebdfdf;
+    border: 2px solid orange;
+    transform: scale(1.02);
+}
+
+#education .card h3{
+    color: #9b096f;
+}
+#education .card h6{
+    color: #dd1489;
+}
+#education .card p{
+    color: gray;
+}
+
+#education .card img{
+    width: 150px;
+} 
 /*******************************************  project section ***************************************************/
 
 
 #project {
-    background-color: #EEEEEE;
+    background-color: #DDDDDD;
     padding: 60px 0;
 }
+
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+
 
 #project .card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.pages .page1 {
+.pages .page1 , .page2{
     border: 2px solid #5356ff;
     border-radius: 20px;
     padding: 15px;
 }
 
-.pages .page1 .card img {
+.pages .page1 .card img, .page2 .card img{
     height: 200px;
     object-fit: cover;
 }
@@ -185,11 +225,13 @@ body {
 
 
 
+
+
 /*******************************************  contact section ***************************************************/
 
 #contact {
     padding: 60px 0 0;
-    background-color: #DDDDDD;
+    background-color: #EEEEEE;
     position: relative;
 }
 
